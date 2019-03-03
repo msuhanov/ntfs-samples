@@ -6,7 +6,7 @@ This repository contains various NTFS file system images for testing.
 * The Windows 10 (18348) installation was used to format the image.
 * Some files were created in the volume.
 
-Artifacts:
+## Artifacts:
 * Cluster slack (file path: "/2.txt").
 * Unallocated data marked as allocated (file path: "/$Extend/$RmMetadata/$Repair", streams: "$Corrupt" and "$Verify", search for the "PTRN" byte pattern there).
 
@@ -16,7 +16,7 @@ Artifacts:
 * The Windows 10 (14393) installation was used to format the image (with the compression feature enabled for the new volume).
 * Some files were created in the volume.
 
-Artifacts:
+## Artifacts:
 * RAM slack (file path: "/1.txt", image offset: 213303).
 * Cluster slack (file path: "/1.txt", image offset: 213504).
 * Unallocated data marked as allocated (file path: "/$Extend/$RmMetadata/$Repair", streams: "$Corrupt" and "$Verify", search for the "PTRN" byte pattern there).
