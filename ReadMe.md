@@ -26,6 +26,7 @@ This repository contains various NTFS file system images for testing.
 * This image was filled with the "PTRN" byte pattern prior to the formatting.
 * The Windows 10 (18348) installation was used to format the image.
 * A single directory and a single file in this directory were created in the volume.
+* This file was opened several times.
 
 ## Artifacts
 * Two different last access timestamps (in the $STANDARD_INFORMATION and $I30->$FILE_NAME attributes) for a single file (file path: "/test/1.txt"): 2019-03-03 12:37:55 and 2019-03-03 12:35:17.
