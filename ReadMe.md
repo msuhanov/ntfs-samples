@@ -33,4 +33,4 @@ This repository contains various NTFS file system images for testing.
 * Unallocated data marked as allocated (file path: "/$Extend/$RmMetadata/$Repair", streams: "$Corrupt" and "$Verify", search for the "PTRN" byte pattern there).
 
 ---
-All files in this repository are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
+All files in this repository (except the 'License.txt' file) are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
