@@ -31,3 +31,6 @@ This repository contains various NTFS file system images for testing.
 ## Artifacts
 * Two different last access timestamps (in the $STANDARD_INFORMATION and $I30->$FILE_NAME attributes) for a single file (file path: "/test/1.txt"): 2019-03-03 12:37:55 and 2019-03-03 12:35:17.
 * Unallocated data marked as allocated (file path: "/$Extend/$RmMetadata/$Repair", streams: "$Corrupt" and "$Verify", search for the "PTRN" byte pattern there).
+
+---
+All files in this repository are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
