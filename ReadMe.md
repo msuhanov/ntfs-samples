@@ -38,4 +38,4 @@ This repository contains various NTFS file system images for testing.
 * The Windows 10 (18362) installation was used to format the image.
 
 ---
-All files in this repository (except the 'License.txt' file) are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
+All files in this repository, except the 'License.txt' file and boot code (MBR/VBR/IPL) embedded in image files, are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
