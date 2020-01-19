@@ -37,5 +37,15 @@ This repository contains various NTFS file system images for testing.
 * This image contains a file system with large clusters (2 097 152 bytes per cluster).
 * The Windows 10 (18362) installation was used to format the image.
 
+# ntfs_extremely_fragmented_mft.raw
+
+The image (894 MiB in the RAR-compressed form) is hosted on another site:
+* https://mega.nz/#!uVdHmAKD!8piInddWWdV0qsMuy9j6KYlGrxGY7IZmGs1Xz1IpzXI
+* MD5(ntfs_extremely_fragmented_mft.rar) = b45bdd5f1acaccbd0300db0b16ba74d1
+
+## Details
+* This image contains a file system with an extremely fragmented $MFT file. Its size is 52166656000 bytes, it has the following MD5: ed9c202405fd9a28b7e0ee96e3f07b33.
+* The following file record numbers are used by attributes of this file: 0, 15, 16, 17, 18, 19, 20, 21, 22, 34799617, 34799618, and 34799619.
+
 ---
 All files in this repository, except the 'License.txt' file and boot code (MBR/VBR/IPL) embedded in image files, are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
