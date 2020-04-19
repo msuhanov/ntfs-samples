@@ -47,5 +47,12 @@ The image (894 MiB in the RAR-compressed form) is hosted on another site:
 * This image contains a file system with an extremely fragmented $MFT file. Its size is 52166656000 bytes, it has the following MD5: ed9c202405fd9a28b7e0ee96e3f07b33.
 * The following file record numbers are used by attributes of this file: 0, 15, 16, 17, 18, 19, 20, 21, 22, 34799617, 34799618, and 34799619.
 
+# ntfs-si-vs-fn.raw
+
+* This image contains a simulated (modified using a HEX editor) file system with three different sets of timestamps (in the $STANDARD_INFORMATION, $FILE_NAME, and $I30->$FILE_NAME attributes) for a single file (file path: "/test/test.txt").
+* The $FILE_NAME attribute in the file record contains the following timestamps: 2014-12-12.
+* The $STANDARD_INFORMATION attribute in the file record contains the following timestamps: 2015-11-03.
+* The $I30->$FILE_NAME attribute in the parent file record (file path: "/test/") contains the following timestamps: 2016-09-24.
+
 ---
 All files in this repository, except the 'License.txt' file and boot code (MBR/VBR/IPL) embedded in image files, are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
