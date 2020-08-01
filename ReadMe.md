@@ -54,5 +54,15 @@ The image (894 MiB in the RAR-compressed form) is hosted on another site:
 * The $STANDARD_INFORMATION attribute in the file record contains the following timestamps: 2015-11-03.
 * The $I30->$FILE_NAME attribute in the parent file record (file path: "/test/") contains the following timestamps: 2016-09-24.
 
+# ntfs.raw
+
+This image contains several artifacts that are ignored by multiple DFIR tools. The image was created using a Windows "20H1" installation (no modifications were made in a HEX editor).
+* MD5(ntfs.raw) = 8db1a094a129a8ebe9500841006aede5
+
+## Artifacts
+* There are two shadow copies of the NTFS volume, one of them is marked as offline (thus, not shown in the "vssadmin list shadows" output). Some tools that rely on Windows to work with shadow copies see only one shadow copy. Do you see two shadow copies? Do you see a file named "shadow_2" in the root directory of the latest shadow copy?
+* There is a file name entry ($I30) existing in the $MFT slack space (within the main volume, not within two shadow copies). Do you see it? Do you see an entry named "file_hidden.txt" in the "test_dir" directory?
+* There are two files with different last access timestamps recorded (within the main volume, not within two shadow copies) in file system metadata (excluding the $FILE_NAME attribute in a file record). Do you see the following last access timestamps for the "/test_dir_2/file_2_1.txt" file: 2020-07-25 12:49:21 and 2020-07-25 12:35:48? Also, do you see the following last access timestamps for the "/test_dir/file_1.txt" file: 2020-07-25 12:33:24 and 2020-07-25 12:35:24?
+
 ---
 All files in this repository, except the 'License.txt' file and boot code (MBR/VBR/IPL) embedded in image files, are available under the "CC0 1.0 Universal" code. See the 'License.txt' file.
