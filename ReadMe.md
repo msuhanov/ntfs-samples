@@ -40,7 +40,7 @@ This repository contains various NTFS file system images for testing.
 # ntfs_extremely_fragmented_mft.raw
 
 The image (894 MiB in the RAR-compressed form) is hosted on another site:
-* https://mega.nz/#!uVdHmAKD!8piInddWWdV0qsMuy9j6KYlGrxGY7IZmGs1Xz1IpzXI
+* https://mega.nz/file/KKhy3Tba#Fp1OGVibpivsngL-l_lyYwmQw8OMhTRsDOlBo9izUyY
 * MD5(ntfs_extremely_fragmented_mft.rar) = b45bdd5f1acaccbd0300db0b16ba74d1
 
 ## Details
